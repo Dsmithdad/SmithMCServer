@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Smithserver — How to Join</title>
+<meta name="description" content="Everything you need to join Smithserver: Minecraft 1.21, Fabric, one-click modpack.">
+<style>
+  :root {
+    --base:#191724; --surface:#1f1d2e; --overlay:#26233a; --muted:#6e6a86; --subtle:#908caa;
+    --text:#e0def4; --love:#eb6f92; --gold:#f6c177; --rose:#ebbcba; --pine:#31748f; --foam:#9ccfd8; --iris:#c4a7e7;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:radial-gradient(1200px 600px at 20% -10%, #2a2540 0%, var(--base) 60%) fixed;
+         color:var(--text); font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  main { max-width:860px; margin:0 auto; padding:48px 16px 80px; }
+  h1 { font-size:2.4rem; margin:0 0 4px; letter-spacing:-.02em; }
+  h1 span { color:var(--iris); }
+  .sub { color:var(--subtle); margin:0 0 32px; }
+  h2 { font-size:1.25rem; margin:40px 0 12px; color:var(--rose); }
+  .card { background:rgba(38,35,58,.65); backdrop-filter:blur(10px); border:1px solid rgba(144,140,170,.2);
+          border-radius:16px; padding:20px 22px; }
+  .addr { display:flex; gap:10px; flex-wrap:wrap; align-items:center; }
+  .addr code { flex:1 1 260px; background:var(--base); border:1px solid var(--overlay); color:var(--foam);
+               padding:12px 14px; border-radius:10px; font-size:1.05rem; overflow-wrap:anywhere; }
+  button, .btn { cursor:pointer; border:0; border-radius:10px; padding:12px 18px; font:inherit; font-weight:600;
+                 background:var(--iris); color:var(--base); text-decoration:none; display:inline-block; }
+  button:hover, .btn:hover { filter:brightness(1.1); }
+  .btn.alt { background:var(--foam); }
+  .pills { display:flex; gap:8px; flex-wrap:wrap; margin-top:14px; }
+  .pill { background:var(--gold); color:var(--base); padding:3px 12px; border-radius:999px; font-size:.85rem; font-weight:600; }
+  .grid { display:grid; gap:16px; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); }
+  .tag { font-size:.75rem; font-weight:700; letter-spacing:.06em; text-transform:uppercase; }
+  .req .tag { color:var(--love); } .opt .tag { color:var(--foam); }
+  .card h3 { margin:4px 0 6px; font-size:1.2rem; }
+  .card p { margin:6px 0 14px; color:var(--subtle); }
+  ol { padding-left:22px; } li { margin:8px 0; }
+  .note { border-left:3px solid var(--gold); padding:10px 14px; background:rgba(246,193,119,.08); border-radius:0 10px 10px 0; color:var(--text); }
+  a { color:var(--foam); }
+  footer { margin-top:48px; color:var(--muted); font-size:.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Smith<span>server</span></h1>
+  <p class="sub">Fabric · Minecraft 1.21 · Creative · Everything you need is on this page.</p>
+
+  <div class="card">
+    <div class="tag" style="color:var(--gold)">Server address</div>
+    <div class="addr" style="margin-top:8px">
+      
+      <code id="addr">irvine-nonsense.tun.ply.gg:50072</code>
+      <button id="copy" type="button">Copy</button>
+    </div>
+    <div class="pills"><span class="pill">Java Edition</span><span class="pill">1.21</span><span class="pill">Fabric</span></div>
+  </div>
+
+  <h2>1 · Pick your pack</h2>
+  <div class="grid">
+    <div class="card req">
+      <div class="tag">Standard</div>
+      <h3>Smithserver Pack</h3>
+      <p>All 168 server mods, exact versions. The minimum you need to join.</p>
+      
+      <a class="btn" href="https://github.com/Dsmithdad/SmithMCServer/releases/latest/download/Smithserver-Required.mrpack">Download (133 MB)</a>
+    </div>
+    <div class="card opt">
+      <div class="tag">Standard + Extras</div>
+      <h3>With shaders &amp; more</h3>
+      <p>Everything in Standard, plus better FPS (Sodium), shaders (Iris + Complementary), and Xaero's minimap and world map.</p>
+      <a class="btn alt" href="https://github.com/Dsmithdad/SmithMCServer/releases/latest/download/Smithserver-Full.mrpack">Download (133 MB + extras)</a>
+    </div>
+  </div>
+
+  <h2>2 · Install in 4 steps</h2>
+  <div class="card">
+    <ol>
+      <li>Install the free <a href="https://modrinth.com/app">Modrinth App</a> (or <a href="https://prismlauncher.org">Prism Launcher</a>) and sign in with your Minecraft account.</li>
+      <li>Download <b>one</b> pack above: Standard, or Standard + Extras.</li>
+      <li>In the launcher: <b>Add instance → Import from file</b> and pick the <code>.mrpack</code>. It installs everything for you.</li>
+      <li>Launch, go to <b>Multiplayer → Add Server</b>, paste the address above, and join.</li>
+    </ol>
+    <div class="note"><b>Changed your mind?</b> Just import the other pack as a second instance. They don't interfere with each other. Turn shaders on in <b>Options → Video Settings → Shader Packs</b>.</div>
+  </div>
+
+  <h2>Good to know</h2>
+  <div class="card">
+    <ul>
+      <li><b>Voice chat</b> (Simple Voice Chat) is included. If you can't hear anyone, tell Dad and we'll sort it out.</li>
+      <li><b>The server is whitelisted.</b> Send Dad your exact Minecraft username so you can be added before you try to join.</li>
+      <li>First launch takes a minute while the 168 mods load. That's normal.</li>
+      <li>Can't connect? Check that your game version says <b>1.21</b> and Fabric, then ping Dad.</li>
+    </ul>
+  </div>
+
+  <footer>Smithserver · Hosted at home, tunneled by playit.gg.</footer>
+</main>
+<script>
+  document.getElementById('copy').addEventListener('click', function () {
+    var b = this, t = document.getElementById('addr').textContent;
+    (navigator.clipboard ? navigator.clipboard.writeText(t) : Promise.reject()).then(function () {
+      b.textContent = 'Copied!'; setTimeout(function () { b.textContent = 'Copy'; }, 1500);
+    }, function () { b.textContent = 'Select & copy'; });
+  });
+</script>
+</body>
+</html>
